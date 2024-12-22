@@ -39,7 +39,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center px-12">
         {config.projects.map((project, index) => (
           <div
-            key={index}
+            key={project.id}
             className="relative w-[275px] bg-white rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2"
           >
             {/* Project Image */}
