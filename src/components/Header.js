@@ -2,14 +2,11 @@ import { Bars3Icon } from "@heroicons/react/24/solid"; // Adjusted icon path
 import { useState } from "react";
 
 export default function Header() {
-  const [toggleMenu, settoggleMenu] = useState(false);
+  const [toggleMenu,settoggleMenu] = useState(false);
 
   return (
-    <header className="flex justify-between items-center px-4 py-3 bg-slate-800 shadow-md">
-      <a
-        className="font-bold text-2xl text-white hover:text-indigo-900 transition duration-300"
-        href="#"
-      >
+    <header className="flex justify-between items-center px-4 py-3 bg-slate-800 shadow-md" id="Home">
+      <a href="#Home"className="font-bold text-2xl text-white hover:text-indigo-900 transition duration-300">
         Brindha L
       </a>
 
@@ -70,9 +67,7 @@ export default function Header() {
       {/* Mobile Navigation */}
       {toggleMenu && (
         <nav className="absolute top-16 left-0 w-full bg-slate-900 shadow-md md:hidden z-50">
-          <ul
-            onClick={() => settoggleMenu(false)}
-            className="flex flex-col items-center text-white text-lg space-y-4 py-4"
+          <ul onClick={() => settoggleMenu(false)} className="flex flex-col items-center text-white text-lg space-y-4 py-4"
           >
             <li>
               <a
